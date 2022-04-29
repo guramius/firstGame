@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url();
+}
+.darkeMode{
+    background: rgb(0, 0, 0);
+}
+.gray{
+    background: darkgray;
+}
+.white{
+    background: white;
+}
+
+#character{
+    background-image: url('./img/t-rex-game.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 45px;
+    position:relative;
+    top: 150px;
+    z-index: 10;
+}
+.animate{
+    animation: jump 1.5s  ease-out;
+}
+@keyframes jump{
+    0%   {top: 100px;left: 10px;}
+
+    100% {top: 0px; left: 10px; }
+}
+
+#block{
+    background-image: url('./img/images.png');
+    background-size: contain;
+    width: 30px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    animation: block 1.5s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
+/* div */
+
+.allClaud{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    animation: claud  10s infinite linear;
+    top: 10px;
+}
+
+@keyframes claud{
+    0%{left: 500px}
+    100%{left: -500px} 
+}
+.score{
+    display: flex;
+    justify-content: center;
+}
